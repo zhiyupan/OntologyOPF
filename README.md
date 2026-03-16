@@ -25,10 +25,10 @@ grid.
 
 However, practical OPF applications face several challenges:
 
--   Heterogeneous data sources (SCADA, EMS, grid models, market data)
--   Inconsistent data formats across operators and tools
--   Lack of machine-interpretable semantics
--   Difficulty integrating textual grid codes with optimization models
+- Heterogeneous data sources (SCADA, EMS, grid models, market data)
+- Inconsistent data formats across operators and tools
+- Lack of machine-interpretable semantics
+- Difficulty integrating textual grid codes with optimization models
 
 OntologyOPF addresses these challenges by introducing a **formal
 semantic model** that describes OPF entities, relationships, and
@@ -38,10 +38,10 @@ constraints.
 
 ## Features
 
--   Semantic representation of **power system components**
--   Formal modeling of **OPF optimization variables and constraints**
--   Support for **grid topology representation**
--   Representation of **operational rules and grid codes**
+- Semantic representation of **power system components**
+- Formal modeling of **OPF optimization variables and constraints**
+- Support for **grid topology representation**
+- Representation of **operational rules and grid codes**
 -   Integration with existing standards (e.g., **CIM**)
 -   Designed for **AI-assisted energy system analysis**
 
