@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/hhujunqi/Desktop/HHOPF/GRIDFM_FINAL/case24/mlruns/525121920116892702/a9cbd4b5b8594d7488a366246fe5cc52/artifacts
+end_time: 1771373053966
+entry_point_name: ''
+experiment_id: '525121920116892702'
+lifecycle_stage: active
+run_id: a9cbd4b5b8594d7488a366246fe5cc52
+run_name: predict_run
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771373053957
+status: 4
+tags: []
+user_id: hhujunqi
