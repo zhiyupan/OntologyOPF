@@ -6,6 +6,7 @@ The project aims to bridge **power system optimization models** and
 **semantic web technologies**, enabling machine-readable, interoperable,
 and explainable representations of OPF problems.
 
+![OntologyOPF Architecture](Figure/model execution.pdf)
 
 ## Ontology Scope
 
