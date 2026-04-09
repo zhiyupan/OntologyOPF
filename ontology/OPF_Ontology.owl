@@ -1,0 +1,1369 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hhujunqi/OPF_Ontology#/"
+     xml:base="http://www.semanticweb.org/hhujunqi/OPF_Ontology#/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:oeo="https://openenergyplatform.org/ontology/oeo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:www="https://www.commoncoreontologies.org/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:CIM100="http://iec.ch/TC57/CIM100#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:OPF_Ontology="http://www.semanticweb.org/hhujunqi/OPF_Ontology#"
+     xmlns:CIM100-European="http://iec.ch/TC57/CIM100-European#"
+     xmlns:rdf-schema-extensions-19990926="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology">
+        <owl:imports rdf:resource="https://openenergyplatform.org/ontology/oeo/releases/2.9.0/oeo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- https://openenergyplatform.org/ontology/oeo/OEO_00020426 -->
+
+    <owl:AnnotationProperty rdf:about="https://openenergyplatform.org/ontology/oeo/OEO_00020426"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#appliesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#appliesTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#InputParameter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Network"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasMetadata -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasMetadata">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Result"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#MetaData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasOutput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasOutput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#OutputParameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasSourceNetwork -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasSourceNetwork">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#InputParameter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Network"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasUnit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Parameter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#inputTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#inputTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#InputParameter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#ModelSelectionstate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#matchesModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#matchesModel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#ModelSelectionstate"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#produces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#produces">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Result"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#usesConstraint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#usesConstraint">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Constraint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://openenergyplatform.org/ontology/oeo/OEO_00000511 -->
+
+    <owl:ObjectProperty rdf:about="https://openenergyplatform.org/ontology/oeo/OEO_00000511">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Objective"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasActivePowerResidual -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasActivePowerResidual">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Result"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasCPU -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasCPU">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#MetaData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasConverged -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasConverged">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Result"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasDescription">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#ModelSelectionstate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasGPU -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasGPU">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#MetaData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasHardware -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasHardware">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#MetaData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasLowerBound -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasLowerBound">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Constraint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasModelName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasModelName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasModelType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasModelType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasModelVersion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasModelVersion">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasNetworkName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasNetworkName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Network"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasNetworkTopology -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasNetworkTopology">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Network"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasNetworkType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasNetworkType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Network"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasOS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasOS">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#MetaData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasObjectiveType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasObjectiveType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Objective"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasPd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasPd">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#ModelSelectionstate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasQd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasQd">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#ModelSelectionstate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasReactivePowerResidual -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasReactivePowerResidual">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Result"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasRunID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasRunID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#MetaData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasRunTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasRunTime">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#MetaData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasSolutionID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasSolutionID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Result"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasSolver -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasSolver">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasTotalCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasTotalCost">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Result"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasUpperBound -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasUpperBound">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Constraint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasVa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasVa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#ModelSelectionstate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Parameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasVm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasVm">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#ModelSelectionstate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasVoltageResidual -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#hasVoltageResidual">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Result"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#preferAccurate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#preferAccurate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#ModelSelectionstate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#preferFast -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#preferFast">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#ModelSelectionstate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#preferUnknown -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#preferUnknown">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#ModelSelectionstate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#rankPreferAccurate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#rankPreferAccurate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#rankPreferFast -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#rankPreferFast">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#rankPreferUnknown -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#rankPreferUnknown">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#requiresPd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#requiresPd">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#requiresQd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#requiresQd">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#requiresVa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#requiresVa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#requiresVm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#requiresVm">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000001">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000002">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000002"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000003">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000004">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000005">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000005"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000045">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000045"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000047">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000047"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000051">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000051"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000060">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000060"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000095">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000095"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000105">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000105"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000107">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000107"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000109">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000109"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000111">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000111"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000113">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000113"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000121">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000121"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000157">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000157"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000182">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000182"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000186 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000186">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000186"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000217 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000217">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000217"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000219 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000219">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000219"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000231">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000231"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000261 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000261">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000261"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000270 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000270">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000270"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000280">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000280"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#ACModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#ACModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#BranchThermalConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#BranchThermalConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Constraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#Component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Component"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#Constraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Constraint"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#CostMinimization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#CostMinimization">
+        <rdfs:subClassOf rdf:resource="https://openenergyplatform.org/ontology/oeo/OEO_00000313"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#DatakitModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#DatakitModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#GeneratorLimitConstrain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#GeneratorLimitConstrain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Constraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#GridfmModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#GridfmModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#InputParameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#InputParameter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#LLMModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#LLMModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#MetaData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#MetaData"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#ModelSelectionstate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#ModelSelectionstate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#Network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Network"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#OPFResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#OPFResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Result"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#Objective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Objective"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#OutputParameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#OutputParameter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#PFResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#PFResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Result"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#Parameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Parameter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#PowerBalanceConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#PowerBalanceConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Constraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#Result -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Result"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#RunMetadata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#RunMetadata">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#MetaData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#VoltageConstrain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#VoltageConstrain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Constraint"/>
+    </owl:Class>
+    
+
+
+    <!-- https://openenergyplatform.org/ontology/oeo/OEO_00000010 -->
+
+    <owl:Class rdf:about="https://openenergyplatform.org/ontology/oeo/OEO_00000010">
+        <rdfs:subClassOf rdf:resource="https://openenergyplatform.org/ontology/oeo/OEO_00000188"/>
+    </owl:Class>
+    
+
+
+    <!-- https://openenergyplatform.org/ontology/oeo/OEO_00000016 -->
+
+    <owl:Class rdf:about="https://openenergyplatform.org/ontology/oeo/OEO_00000016">
+        <rdfs:subClassOf rdf:resource="https://openenergyplatform.org/ontology/oeo/OEO_00000188"/>
+    </owl:Class>
+    
+
+
+    <!-- https://openenergyplatform.org/ontology/oeo/OEO_00000032 -->
+
+    <owl:Class rdf:about="https://openenergyplatform.org/ontology/oeo/OEO_00000032">
+        <rdfs:subClassOf rdf:resource="https://openenergyplatform.org/ontology/oeo/OEO_00000188"/>
+    </owl:Class>
+    
+
+
+    <!-- https://openenergyplatform.org/ontology/oeo/OEO_00000188 -->
+
+    <owl:Class rdf:about="https://openenergyplatform.org/ontology/oeo/OEO_00000188">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Component"/>
+        <obo:IAO_0000115 xml:lang="en">A generator is an energy converting component that converts other forms of energy into electrical energy.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="de">Generator</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="de">Stromerzeuger</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">generator</rdfs:label>
+        <oeo:OEO_00020426>issue: https://github.com/OpenEnergyPlatform/ontology/issues/173
+pull request: https://github.com/OpenEnergyPlatform/ontology/pull/273
+axiom
+pull request: https://github.com/OpenEnergyPlatform/ontology/pull/895
+
+change produces energy axiom to &apos;has energy output&apos;:
+issue: https://github.com/OpenEnergyPlatform/ontology/issues/994
+pull request: https://github.com/OpenEnergyPlatform/ontology/pull/1006
+
+rework module structure 
+issue: https://github.com/OpenEnergyPlatform/ontology/issues/1592
+pull request: https://github.com/OpenEnergyPlatform/ontology/pull/1652</oeo:OEO_00020426>
+    </owl:Class>
+    
+
+
+    <!-- https://openenergyplatform.org/ontology/oeo/OEO_00000313 -->
+
+    <owl:Class rdf:about="https://openenergyplatform.org/ontology/oeo/OEO_00000313"/>
+    
+
+
+    <!-- https://openenergyplatform.org/ontology/oeo/OEO_00010072 -->
+
+    <owl:Class rdf:about="https://openenergyplatform.org/ontology/oeo/OEO_00010072">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://openenergyplatform.org/ontology/oeo/OEO_00010073 -->
+
+    <owl:Class rdf:about="https://openenergyplatform.org/ontology/oeo/OEO_00010073">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://openenergyplatform.org/ontology/oeo/OEO_00020140 -->
+
+    <owl:Class rdf:about="https://openenergyplatform.org/ontology/oeo/OEO_00020140">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://openenergyplatform.org/ontology/oeo/OEO_00320001 -->
+
+    <owl:Class rdf:about="https://openenergyplatform.org/ontology/oeo/OEO_00320001">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#CurrentState -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#CurrentState">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#ModelSelectionstate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model_ACOPF -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model_ACOPF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#ACModel"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <OPF_Ontology:usesConstraint rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#constraint_BranchThermal"/>
+        <OPF_Ontology:usesConstraint rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#constraint_GenPBounds"/>
+        <OPF_Ontology:usesConstraint rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#constraint_PowerBalance"/>
+        <OPF_Ontology:usesConstraint rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#constraint_VoltageBounds"/>
+        <OPF_Ontology:hasModelName>ACOPF</OPF_Ontology:hasModelName>
+        <OPF_Ontology:hasModelType>AC</OPF_Ontology:hasModelType>
+        <OPF_Ontology:hasSolver>Pandapower</OPF_Ontology:hasSolver>
+        <OPF_Ontology:rankPreferAccurate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</OPF_Ontology:rankPreferAccurate>
+        <OPF_Ontology:rankPreferFast rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</OPF_Ontology:rankPreferFast>
+        <OPF_Ontology:rankPreferUnknown rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</OPF_Ontology:rankPreferUnknown>
+        <OPF_Ontology:requiresPd rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</OPF_Ontology:requiresPd>
+        <OPF_Ontology:requiresQd rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</OPF_Ontology:requiresQd>
+        <OPF_Ontology:requiresVa rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</OPF_Ontology:requiresVa>
+        <OPF_Ontology:requiresVm rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</OPF_Ontology:requiresVm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#Pd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Pd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#InputParameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#Qd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Qd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#InputParameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#Run_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Run_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Result"/>
+        <OPF_Ontology:hasConverged rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</OPF_Ontology:hasConverged>
+        <OPF_Ontology:hasRunID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</OPF_Ontology:hasRunID>
+        <OPF_Ontology:hasRunTime rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.18</OPF_Ontology:hasRunTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#Va -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Va">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#InputParameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#Vm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Vm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#InputParameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#case24_ieee_rts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#case24_ieee_rts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Network"/>
+        <OPF_Ontology:hasNetworkName>IEEE RTS 24</OPF_Ontology:hasNetworkName>
+        <OPF_Ontology:hasNetworkTopology>IEEE_RTS_24_bus</OPF_Ontology:hasNetworkTopology>
+        <OPF_Ontology:hasNetworkType>AC</OPF_Ontology:hasNetworkType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#constraint_BranchThermal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#constraint_BranchThermal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Constraint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#constraint_GenPBounds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#constraint_GenPBounds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Constraint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#constraint_PowerBalance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#constraint_PowerBalance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Constraint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#constraint_VoltageBounds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#constraint_VoltageBounds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Constraint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#metadata_current -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#metadata_current">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#MetaData"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#model_Datakit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#model_Datakit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#DatakitModel"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <OPF_Ontology:hasModelName>Datakit</OPF_Ontology:hasModelName>
+        <OPF_Ontology:hasModelType>Data generator</OPF_Ontology:hasModelType>
+        <OPF_Ontology:hasModelVersion>unknown</OPF_Ontology:hasModelVersion>
+        <OPF_Ontology:hasSolver>datakit</OPF_Ontology:hasSolver>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#model_GPTOPF -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#model_GPTOPF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#LLMModel"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <OPF_Ontology:hasModelName>GPTOPF</OPF_Ontology:hasModelName>
+        <OPF_Ontology:hasModelType>LLM-assisted OPF</OPF_Ontology:hasModelType>
+        <OPF_Ontology:hasModelVersion>GPT4</OPF_Ontology:hasModelVersion>
+        <OPF_Ontology:hasSolver>gpt</OPF_Ontology:hasSolver>
+        <OPF_Ontology:rankPreferAccurate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</OPF_Ontology:rankPreferAccurate>
+        <OPF_Ontology:rankPreferFast rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</OPF_Ontology:rankPreferFast>
+        <OPF_Ontology:rankPreferUnknown rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</OPF_Ontology:rankPreferUnknown>
+        <OPF_Ontology:requiresPd rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</OPF_Ontology:requiresPd>
+        <OPF_Ontology:requiresQd rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</OPF_Ontology:requiresQd>
+        <OPF_Ontology:requiresVa rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</OPF_Ontology:requiresVa>
+        <OPF_Ontology:requiresVm rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</OPF_Ontology:requiresVm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#model_GridFM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#model_GridFM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#GridfmModel"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Model"/>
+        <OPF_Ontology:hasModelName>GridFM</OPF_Ontology:hasModelName>
+        <OPF_Ontology:hasModelType>PF Predictor</OPF_Ontology:hasModelType>
+        <OPF_Ontology:hasModelVersion>GridFM_v0_2</OPF_Ontology:hasModelVersion>
+        <OPF_Ontology:hasSolver>gridfm</OPF_Ontology:hasSolver>
+        <OPF_Ontology:rankPreferAccurate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</OPF_Ontology:rankPreferAccurate>
+        <OPF_Ontology:rankPreferFast rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</OPF_Ontology:rankPreferFast>
+        <OPF_Ontology:rankPreferUnknown rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</OPF_Ontology:rankPreferUnknown>
+        <OPF_Ontology:requiresPd rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</OPF_Ontology:requiresPd>
+        <OPF_Ontology:requiresQd rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</OPF_Ontology:requiresQd>
+        <OPF_Ontology:requiresVa rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</OPF_Ontology:requiresVa>
+        <OPF_Ontology:requiresVm rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</OPF_Ontology:requiresVm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hhujunqi/OPF_Ontology#objective_CostMinimization -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hhujunqi/OPF_Ontology#objective_CostMinimization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hhujunqi/OPF_Ontology#Objective"/>
+        <OPF_Ontology:hasObjectiveType></OPF_Ontology:hasObjectiveType>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
